@@ -1,0 +1,127 @@
+* {
+  font-family: "Montserrat";
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  overflow-x: hidden;
+  width: 80vw;
+}
+.container .title {
+  background-color: #ffb288;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.container .sub-title::after {
+  content: "";
+  display: inline-block;
+  margin: 5px 10px;
+  height: 2px;
+  width: 200px;
+  background-color: #ffb288;
+}
+.container .categories {
+  margin: 20px 0px;
+}
+.container .category {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(15, 15, 15);
+  border-radius: 6px;
+  margin: 5px 0px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  padding: 10px 20px;
+}
+.container .palletes {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+@media screen and (max-width: 980px) {
+  .container .palletes {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 980px) and (max-width: 660px) {
+  .container .palletes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 980px) and (max-width: 660px) and (max-width: 400px) {
+  .container .palletes {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+.container .palletes .pallete {
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  height: 100px;
+  background-color: #4e4e4e;
+}
+.container .palletes .pallete .code {
+  margin-top: 65%;
+  padding: 10px;
+}
+.container .palletes .p1 {
+  background-color: #ffb288;
+}
+.container .palletes .p2 {
+  background-color: #aa5c31;
+}
+.container .palletes .p3 {
+  background-color: #c15624;
+}
+.container .palletes .p4 {
+  background-color: #f95700;
+}
+.container .copyrights {
+  color: #1d1d1d;
+  margin-top: 10px;
+  font-weight: 600;
+}
+@media screen and (max-width: 400px) {
+  .container .copyrights {
+    font-size: 0.8em;
+  }
+}
+.container .link_profile {
+  color: #1d1d1d;
+  font-weight: 900;
+}
+.container .btn_profile {
+  margin-top: 10px;
+  color: white;
+  background-color: #c15624;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 6px;
+}
+@media screen and (max-width: 400px) {
+  .container .btn_profile {
+    font-size: 0.8em;
+  }
+}
+.container footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+  height: 10vh;
+}/*# sourceMappingURL=index.css.map */
